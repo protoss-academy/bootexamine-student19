@@ -1,6 +1,7 @@
 package com.protosstechnology.train.bootexamine.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -25,6 +26,9 @@ import lombok.extern.slf4j.Slf4j;
 @RestController
 @RequestMapping("/document")
 public class jController {
+	
+	@Value("${application.server.path}")
+	String serverPath;
 	
 	@Autowired
 	JServices jService;
