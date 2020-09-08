@@ -16,6 +16,7 @@ import lombok.NonNull;
 @AllArgsConstructor
 @EqualsAndHashCode(of= {"id"})
 public class Document {
+	
 	private @Id @GeneratedValue Long id;
 	
 	@NonNull private String documentNumber;

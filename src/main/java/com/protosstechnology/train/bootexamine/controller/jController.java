@@ -64,9 +64,10 @@ public class jController {
 	@PostMapping
 	public ResponseEntity<Document> addDocument(@RequestBody Document document) {
 		log.info("in addDocument");
+		log.info("document: {}", document);
 		jService.create(document);
 		
-		log.info("Document id: {}", document.getId());
+		//log.info("Document id: {}", document.getId());
 		return ResponseEntity.ok().body(document);
 	}
 	

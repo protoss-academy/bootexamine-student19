@@ -8,8 +8,7 @@ import org.springframework.web.client.RestTemplate;
 import com.protosstechnology.train.bootexamine.entity.Document;
 import com.protosstechnology.train.bootexamine.service.JServices;
 
-@Service
-@Transactional
+
 public class jServiceImpl implements JServices{
 	@Override
 	public void create(Document document) {
